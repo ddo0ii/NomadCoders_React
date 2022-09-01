@@ -1,0 +1,26 @@
+<!-- 버튼을 몇 번 클릭했는지 세는 어플을 만들어보자 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <span>Total clicks: 0</span>
+    <button id="btn">Click me</button>
+</body>
+<script>
+    let counter = 0;
+    // 근데 document.querySelector("button")는 button이 많은 어플리케이션에서 쓰면 제대로 작동하지 않음
+    // const button = document.querySelector("button");
+    // 그래서 대부분 아래와 같이 id를 사용함
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+
+    // Click에 대응할 function
+    function handleClick() {
+        counter = counter + 1;
+        span.innerText = `Total clicks: ${counter}`;
+    }
+
+    // Click 감지
+    button.addEventListener("click", handleClick);
+</script>
+</html>
