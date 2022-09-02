@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body>
-    
+    <div id="root"></div>
 </body>
 <!-- https://ko.reactjs.org/docs/cdn-links.html -->
 <!-- 개발용 -->
@@ -10,6 +11,14 @@
 <!-- 배포용 -->
 <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-
+<script>
+    const root = document.getElementById("root");
+    // React JS로 element 생성하기
+    // createElement의 괄호안에는 우리가 생성하고자 하는 HTML태그와 동일해야 함
+    const span = React.createElement("span", { id: "sexy-span", style: { color: "red" } }, "Hello I'm a span");
+    // render는 React Element를 가지고 HTML로 만들어 배치한다(사용자에게보여줌)
+    // span인데 id가 root인 것 안에 있는 것
+    ReactDOM.render(span, root);
+</script>
 
 </html>
