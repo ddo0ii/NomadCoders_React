@@ -15,10 +15,12 @@
     const root = document.getElementById("root");
     // React JS로 element 생성하기
     // createElement의 괄호안에는 우리가 생성하고자 하는 HTML태그와 동일해야 함
-    const span = React.createElement("span", { id: "sexy-span", style: { color: "red" } }, "Hello I'm a span");
+    const span = React.createElement("h3", null, "Hello I'm a span");
+    const btn = React.createElement("button", null, "Click me");
+    const container = React.createElement("div", null, [span, btn]);
     // render는 React Element를 가지고 HTML로 만들어 배치한다(사용자에게보여줌)
     // span인데 id가 root인 것 안에 있는 것
-    ReactDOM.render(span, root);
+    ReactDOM.render(container, root);
 </script>
 
 </html>
