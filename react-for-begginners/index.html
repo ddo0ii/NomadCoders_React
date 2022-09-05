@@ -11,24 +11,26 @@
 <!-- 배포용 -->
 <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-<script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
     const root = document.getElementById("root");
-    // React JS로 element 생성하기
-    // createElement의 괄호안에는 우리가 생성하고자 하는 HTML태그와 동일해야 함
-    const h3 = React.createElement("h3", {
-        id: "title",
-        onMouseEnter: () => console.log("mouse enter")
-    }, "Hello I'm a h3");
-    const btn = React.createElement("button", {
-        onClick: () => console.log("I am clicked!"),
-        style: {
-            backgroundColor: "tomato"
-        }
-    }, "Click me");
-    const container = React.createElement("div", null, [h3, btn]);
+    const Title = (
+        <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+            Hello I'm a h3
+        </h3>
+    );
+    const Button = (
+        <button 
+            style={{backgroundColor: "tomato"}} 
+            onClick={() => console.log("I am clicked!")}
+        >
+            Click me
+        </button>
+    );
+
+    const container = React.createElement("div", null, [Title, Button]);
     // render는 React Element를 가지고 HTML로 만들어 배치한다(사용자에게보여줌)
     // h3인데 id가 root인 것 안에 있는 것
     ReactDOM.render(container, root);
 </script>
-
 </html>
