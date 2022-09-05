@@ -4,22 +4,19 @@
 <body>
     <div id="root"></div>
 </body>
-<!-- https://ko.reactjs.org/docs/cdn-links.html -->
-<!-- 개발용 -->
-<!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> -->
-<!-- 배포용 -->
-<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
     const root = document.getElementById("root");
-    const Title = (
-        <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-            Hello I'm a h3
-        </h3>
-    );
-    const Button = (
+    function Title() {
+        return (
+            <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+                Hello I'm a h3
+            </h3>
+        )
+    }
+    const Button = () => (
         <button 
             style={{backgroundColor: "tomato"}} 
             onClick={() => console.log("I am clicked!")}
@@ -28,9 +25,12 @@
         </button>
     );
 
-    const container = React.createElement("div", null, [Title, Button]);
-    // render는 React Element를 가지고 HTML로 만들어 배치한다(사용자에게보여줌)
-    // h3인데 id가 root인 것 안에 있는 것
-    ReactDOM.render(container, root);
+    const Container = (
+        <div>
+            <Title />
+            <Button />    
+        </div>
+    )
+    ReactDOM.render(Container, root);
 </script>
 </html>
