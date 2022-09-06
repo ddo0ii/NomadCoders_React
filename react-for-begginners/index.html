@@ -12,15 +12,8 @@
 
     const Container = () => (
         <div>
-            <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
-                Hello I'm a h3
-            </h3>
-            <button
-                style={{ backgroundColor: "tomato" }}
-                onClick={() => console.log("I am clicked!")}
-            >
-                Click me
-            </button>
+            <h3>Total clicks: 0</h3>
+            <button>Click me</button>
         </div>
     )
     ReactDOM.render(<Container />, root);
