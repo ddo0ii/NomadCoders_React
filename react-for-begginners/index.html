@@ -10,17 +10,15 @@
 <script type="text/babel">
     const root = document.getElementById("root");
     function App() {
-        const [counter, setCounter] = React.useState(0);
-        const onClick = () => {
-            // setCounter(counter + 1);
-            setCounter((current) => current + 1);
-        }
         return (
             <div>
-                <h3>Total clicks: {counter}</h3>
-                <button onClick={onClick}>Click me</button>
+                <h1>Super Converter</h1>
+                <label htmlFor="minutes">Minutes</label>
+                <input id="minutes" placeholder="Minutes" type="number" />
+                <label htmlFor="hours">Hours</label>
+                <input id="hours" placeholder="Hours" type="number" />
             </div>
-        );
+        )
     }
     ReactDOM.render(<App />, root);
 </script>
