@@ -1,3 +1,4 @@
+import { func } from "prop-types";
 import { useEffect, useState } from "react";
 
 function Hello() {
@@ -8,7 +9,21 @@ function Hello() {
     console.log("created :)");
     return byeFn;
   }
-  useEffect(hiFn, []);
+
+  // 아래의 방법을 많이 사용한다
+  // 방법1 (이것이 더 짧기 때문에 이것을 더 많이 사용)
+  useEffect(() => {
+    console.log("hi :)");
+    return () => console.log("bye :(");
+  }, []);
+  // 방법2
+  useEffect(function () {
+    console.log("hi :)");
+    return function () {
+      console.log("bye :(");
+    };
+  }, []);
+
   return <h1>Hello</h1>;
 }
 
