@@ -6,13 +6,14 @@ function App() {
   const onClick = () => setValue((pre) => pre + 1);
   const onChange = (event) => setKeyword(event.target.value);
   useEffect(() => {
-    console.log("Call the API...");
+    console.log("I run only once.");
   }, []);
   useEffect(() => {
-    if (keyword !== "" && keyword.length > 5) {
-      console.log("SEARCH FOR", keyword);
-    }
+    console.log("I run when 'keyword' changes.");
   }, [keyword]);
+  useEffect(() => {
+    console.log("I run when 'counter' changes.");
+  }, [counter]);
   return (
     <div>
       <input
