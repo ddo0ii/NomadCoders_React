@@ -2,16 +2,17 @@ import { useState } from "react";
 
 function App() {
   const [toDo, setToDo] = useState("");
+  const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
-    // input이 빌때 작동하지 않기
     if (toDo === "") {
       return;
     }
-    // 비우기
+    setToDos((currentArray) => [toDo, ...currentArray]);
     setToDo("");
   };
+  console.log(toDos);
   return (
     <div>
       <form onSubmit={onSubmit}>
