@@ -11,6 +11,7 @@ class App extends React.Component {
     const movies = await axios.get(
       "https://yts-proxy.nomadcoders1.now.sh/list_movies.json"
     );
+    console.log(movies.data.data.movies);
   };
 
   componentDidMount() {
