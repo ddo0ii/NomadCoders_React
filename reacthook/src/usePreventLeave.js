@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-
-const usePreventLeave = () => {
+export const usePreventLeave = () => {
   const listener = (event) => {
     event.preventDefault();
     event.returnValue = "";
@@ -12,14 +10,3 @@ const usePreventLeave = () => {
 
   return { enablePrevent, disablePrevent };
 };
-
-export default function App() {
-  const { enablePrevent, disablePrevent } = usePreventLeave();
-
-  return (
-    <div className="App">
-      <button onClick={enablePrevent}>Protect</button>
-      <button onClick={disablePrevent}>Unprotect</button>
-    </div>
-  );
-}
