@@ -28,7 +28,7 @@ const useClick = (onClick) => {
 const App = () => {
   // const potato = useRef(); // getElementById와 동일한 개념
   // setTimeout(() => console.log(potato.current.value), 2000);
-  // setTimeout(() => console.log(potato.current.focus()), 2000);
+  // setTimeout(() => potato.current.focus(), 2000);
   const sayHello = () => console.log("say hello");
   const title = useClick(sayHello); // useClick으로 ref 새성
 
