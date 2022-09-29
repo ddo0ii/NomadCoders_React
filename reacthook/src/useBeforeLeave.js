@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-
-const useBeforeLeave = (onBefore) => {
+export const useBeforeLeave = (onBefore) => {
   if (typeof onBefore !== "function") {
     return;
   }
@@ -18,14 +16,3 @@ const useBeforeLeave = (onBefore) => {
     return () => document.removeEventListener("mouseleave", handle);
   }, []); // 맨 처음 mount될 때 한번만 이벤트가 실행되기를 원함.
 };
-
-export default function App() {
-  const begForLife = () => console.log("Pls dont leave...");
-  useBeforeLeave(begForLife);
-
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
-}
