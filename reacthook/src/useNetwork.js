@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
-
 // navigator가 online, offline이 되는 걸 막아줌
 // network 상태가 변할때마다 function 호출!
-const useNetwork = (onChange) => {
+export const useNetwork = (onChange) => {
   const [status, setStatus] = useState(navigator.onLine);
   const handleChange = () => {
     if (typeof onChange === "function") {
@@ -23,16 +21,3 @@ const useNetwork = (onChange) => {
 
   return status;
 };
-
-export default function App() {
-  const handleNetworkChange = (online) => {
-    console.log(online ? "We just went online" : "we are offline");
-  };
-
-  const onLine = useNetwork(handleNetworkChange);
-  return (
-    <div className="App">
-      <h1>{onLine ? "Online" : "Offline"}</h1>
-    </div>
-  );
-}
