@@ -19,7 +19,9 @@ const useNotification = (title, options) => {
 };
 
 const App = () => {
-  const triggerNotif = useNotification("Can I steal your kimchi?");
+  const triggerNotif = useNotification("Can I steal your kimchi?", {
+    body: "I love kimchi don't you?",
+  });
   return (
     <div style={{ heigh: "1000vh" }}>
       <button onClick={triggerNotif}>Hello</button>
