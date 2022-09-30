@@ -1,0 +1,28 @@
+{
+  "name": "@nooks/use-before-leave",
+  "version": "1.0.1",
+  "description": "React Hook to execute a function when the mouse leaves the document.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomadcoders/nooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "leave",
+    "beforeleave",
+    "unload",
+    "mouseleave"
+  ],
+  "author": "Nicolás Serrano Arévalo <nico@nomadcoders.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomadcoders/nooks/issues"
+  },
+  "homepage": "https://github.com/nomadcoders/nooks#readme",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
