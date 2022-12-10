@@ -28,20 +28,10 @@ YouTube Site : [YouTube Site로 이동하기]()
 
 <br/>
 
-- Learned <br/>
-1. JSX
-2. State
-3. Props
-4. Class Components
-5. Data Fetching
-6. Routing
-
-<br/>
-
 - Function <br/>
 1. JSX
 2. State
 3. Props
 4. Class Components
 5. Data Fetching
-6. etc
+6. Routing
