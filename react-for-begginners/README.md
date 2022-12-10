@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 영화 웹 서비스
+<br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### ReactJS로 영화 웹 서비스 만들기 : React Firebase for Beginners
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+[ReactJS로 영화 웹 서비스 만들기 : React Firebase for Beginners로 이동하기](https://nomadcoders.co/react-for-beginners)
 
-### `npm start`
+<br/>
+수강사이트 | NOMAD CODERS <br/>
+강사 | Nicolas Serrano Arevalo <br/>
+사용 기술 | React.js, Node.js, CSS <br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Nomad Coders의 'ReactJS로 영화 웹 서비스 만들기'를 수강하며 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 영화 웹 서비스 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+Github : [Github Site로 이동하기](https://github.com/ddo0ii/NomadCoders_React/tree/main/react-for-begginners)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hosting Site : [Hosting Site로 이동하기](https://ddo0ii.github.io/Twitter_React_NomadCoders)
 
-### `npm run build`
+Blog Site : [Blog Site로 이동하기](https://ddo-development.tistory.com/category/React/ReactJS%EB%A1%9C%20%EC%98%81%ED%99%94%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Lecture Site : [Lecture Site로 이동하기](https://nomadcoders.co/react-for-beginners)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+YouTube Site : [YouTube Site로 이동하기]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br/>
 
-### `npm run eject`
+- Learned <br/>
+1. JSX
+2. State
+3. Props
+4. Class Components
+5. Data Fetching
+6. Routing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Function <br/>
+1. JSX
+2. State
+3. Props
+4. Class Components
+5. Data Fetching
+6. etc
