@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styles from "./Movie.module.css";
 
-function Movie({ id, coverImg, title, year, summary, genres }) {
+function Movie({ id, coverImg, backCoverImg, title, year, summary, genres }) {
   return (
     <div className={styles.movie}>
       <img src={coverImg} alt={title} className={styles.movie__img} />
@@ -24,6 +24,7 @@ function Movie({ id, coverImg, title, year, summary, genres }) {
 
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
+  backCoverImg: PropTypes.string.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,

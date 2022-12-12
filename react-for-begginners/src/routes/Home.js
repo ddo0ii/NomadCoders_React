@@ -31,6 +31,7 @@ function Home() {
               id={movie.id}
               year={movie.year}
               coverImg={movie.medium_cover_image}
+              backCoverImg={movie.background_image}
               title={movie.title}
               summary={movie.summary}
               genres={movie.genres}

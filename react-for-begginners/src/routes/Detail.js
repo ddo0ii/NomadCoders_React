@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MovieDetail from "../render/MovieDetail";
 
-function Detail({ coverImg, title, year, summary, genres }) {
+function Detail({ coverImg, backCoverImg, title, year, summary, genres }) {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [movie, setMovie] = useState([]);
@@ -32,6 +32,7 @@ function Detail({ coverImg, title, year, summary, genres }) {
             id={movie.id}
             year={movie.year}
             coverImg={movie.medium_cover_image}
+            backCoverImg={movie.background_image}
             title={movie.title}
             summary={movie.description_full}
             genres={movie.genres}
