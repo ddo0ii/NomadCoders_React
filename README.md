@@ -19,7 +19,7 @@
 
 <br/>
 
-[ReactJS로 영화 웹 서비스 만들기 : React Firebase for Beginners로 이동하기](https://nomadcoders.co/react-for-beginners)
+[ReactJS로 영화 웹 서비스 만들기 : React for Beginners로 이동하기](https://nomadcoders.co/react-for-beginners)
 
 <br/>
 수강사이트 | NOMAD CODERS <br/>
