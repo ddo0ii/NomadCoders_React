@@ -15,7 +15,7 @@
 # 영화 웹 서비스
 <br/>
 
-### ReactJS로 영화 웹 서비스 만들기 : React Firebase for Beginners
+### ReactJS로 영화 웹 서비스 만들기 : React for Beginners
 
 <br/>
 
@@ -32,13 +32,13 @@
 
 Github : [Github Site로 이동하기](https://github.com/ddo0ii/NomadCoders_React/tree/main/react-for-begginners)
 
-Hosting Site : [Hosting Site로 이동하기](https://ddo0ii.github.io/Twitter_React_NomadCoders)
+Hosting Site : [Hosting Site로 이동하기](https://ddo0ii.github.io/NomadCoders_React/)
 
 Blog Site : [Blog Site로 이동하기](https://ddo-development.tistory.com/category/React/ReactJS%EB%A1%9C%20%EC%98%81%ED%99%94%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
 Lecture Site : [Lecture Site로 이동하기](https://nomadcoders.co/react-for-beginners)
 
-YouTube Site : [YouTube Site로 이동하기]()
+YouTube Site : [YouTube Site로 이동하기](https://youtu.be/jT91qmaHXIo)
 
 <br/>
 
